@@ -61,21 +61,21 @@ const Login = () => {
     <div className="fixed top-0 left-0 right-0 bottom-0 z-10 backdrop-blur-sm bg-black/30 flex justify-center items-center">
       <motion.form
         onSubmit={onSubmitHandler}
-        className="relative bg-white p-10 rounded-xl text-slate-500"
+        className="relative bg-white p-8 sm:p-10 rounded-xl text-slate-500 w-full max-w-sm sm:max-w-md"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 50 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
       >
         <motion.h1
-          className="text-2xl text-center text-neutral-700 font-medium"
+          className="text-2xl sm:text-3xl text-center text-neutral-700 font-medium"
           initial={{ opacity: 0.2, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
         >
           {state}
         </motion.h1>
-        <p className="text-sm text-center">Create an account</p>
+        <p className="text-sm sm:text-base text-center">Create an account</p>
 
         {state !== "Login" && (
           <motion.div
@@ -90,7 +90,7 @@ const Login = () => {
               value={name}
               type="text"
               placeholder="Full Name"
-              className="outline-none text-sm"
+              className="outline-none text-sm sm:text-base w-full"
               required
             />
           </motion.div>
@@ -108,7 +108,7 @@ const Login = () => {
             value={email}
             type="email"
             placeholder="Email"
-            className="outline-none text-sm"
+            className="outline-none text-sm sm:text-base w-full"
             required
           />
         </motion.div>
@@ -124,7 +124,7 @@ const Login = () => {
             value={password}
             type="password"
             placeholder="Password"
-            className="outline-none text-sm"
+            className="outline-none text-sm sm:text-base w-full"
             required
           />
         </motion.div>
@@ -163,7 +163,7 @@ const Login = () => {
           onClick={() => setShowLogin(false)}
           src={assets.cross_icon}
           alt=""
-          className="absolute top-5 right-5 cursor-pointer"
+          className="absolute top-3 sm:top-5 right-3 sm:right-5 cursor-pointer"
           whileHover={{ rotate: 90 }}
           transition={{ duration: 0.3 }}
         />
