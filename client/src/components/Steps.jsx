@@ -14,7 +14,7 @@ const Steps = () => {
       <h1 className="text-3xl sm:text-4xl font-semibold mb-2">
         How it <span className="text-purple-600">Works</span>
       </h1>
-      <p className="text-lg text-fray-600 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Transform your text into an image
       </p>
 
