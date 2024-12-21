@@ -51,7 +51,7 @@ const Header = () => {
         AI.
       </motion.p>
       <motion.button
-        className="sm:text-lg text-white bg-black w-auto mt-8 mx-12 px-12 py-2.5 flex items-center gap-2 rounded-full"
+        className="sm:text-lg text-white bg-black w-auto mt-8 mx-12 px-8 py-2 sm:px-12 sm:py-2.5 flex items-center gap-2 rounded-full"
         onClick={onClickHandler}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
