@@ -82,6 +82,7 @@ const Header = () => {
               alt="sampleimg"
               key={index}
               width={70}
+              loading="lazy"
             />
           ))}
       </motion.div>
